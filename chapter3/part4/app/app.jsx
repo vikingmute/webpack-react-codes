@@ -4,5 +4,8 @@ import Profile from './Profile';
 
 const ele = document.createElement('div');
 document.body.appendChild(ele);
-
-render(<Profile name="viking" />, ele);
+const props = {
+	name: 'viking',
+	age: 20
+}
+render(<Profile {...props} />, ele);

@@ -2,7 +2,8 @@ import React, { PropTypes } from 'react';
 import Hobby from './Hobby';
 
 const propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired
 };
 
 class Profile extends React.Component {
@@ -48,15 +49,16 @@ class Profile extends React.Component {
   render() {
     return (
       <div>
-        <h1>My name is {this.props.name}</h1>
-        <button onClick={this.likedCallback}>Like Me!</button>
-        <h2>How many times you liked me: {this.state.liked}</h2>
-        <h2>Hobbies:</h2>
+        <h1>我的名字叫 {this.props.name}</h1>
+        <h2>我今年 {this.props.age} 岁</h2>
+        <button onClick={this.likedCallback}>给我点赞</button>
+        <h2>总点赞数： {this.state.liked}</h2>
+        <h2>我的爱好：</h2>
         <ul>
           {this.state.hobbies.map((hobby, i) => <Hobby key={i} hobby={hobby} />)}
         </ul>
         <input type="text" ref="hobby" />
-        <button onClick={this.addHobbyCallback}>Add Hobby</button>
+        <button onClick={this.addHobbyCallback}>添加爱好</button>
       </div>
     );
   }
