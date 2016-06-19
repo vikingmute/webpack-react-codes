@@ -1,0 +1,8 @@
+{
+  "name": "part2",
+  "version": "0.0.1",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1"
+  }
+}
