@@ -7,6 +7,7 @@ import { render } from 'react-dom';
 import { bindActionCreators, createStore, applyMiddleware } from 'redux';
 import { connect, Provider } from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
+import promiseMiddleware from 'redux-promise-middleware';
 
 import Deskmark from 'components/Deskmark';
 import rootReducer from 'reducers';
@@ -16,7 +17,8 @@ import 'bootstrap/scss/bootstrap.scss';
 
 // create store with middlewares
 const store = applyMiddleware(
-  thunkMiddleware
+  thunkMiddleware,
+  promiseMiddleware()
 )(createStore)(rootReducer);
 
 // create root component based on component Deskmark

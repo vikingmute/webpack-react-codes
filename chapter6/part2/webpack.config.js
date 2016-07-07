@@ -3,18 +3,16 @@ var webpack = require('webpack');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 
 var ROOT_PATH = path.resolve(__dirname);
-var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 var APP_PATH = path.resolve(ROOT_PATH, 'app');
+var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
+
 module.exports= {
   entry: {
-    app: path.resolve(APP_PATH, 'app.js')
+    app: path.resolve(APP_PATH, 'app.jsx')
   },
   output: {
     path: BUILD_PATH,
     filename: 'bundle.js'
-  },
-  node: {
-    fs: "empty"
   },
   //enable dev source map
   devtool: 'eval-source-map',
@@ -23,7 +21,15 @@ module.exports= {
     historyApiFallback: true,
     hot: true,
     inline: true,
-    progress: true
+    progress: true,
+    proxy: {
+      '/api/*': {
+        target: 'http://localhost:3000/',
+        rewrite: function(req) {
+          req.url = req.url.replace(/^\/api/, '');
+        }
+      }
+    }
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
@@ -40,13 +46,21 @@ module.exports= {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['babel'],
+        loaders: ['react-hot', 'babel'],
         include: APP_PATH
-      }    ]
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      }
+    ]
+  },
+  jshint: {
+    "esnext": true
   },
   plugins: [
     new HtmlwebpackPlugin({
-      title: 'My first redux app'
+      title: 'Deskmark app'
     })
   ]
 }
