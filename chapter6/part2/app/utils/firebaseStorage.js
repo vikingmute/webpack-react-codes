@@ -70,11 +70,14 @@ export function updateEntry(id, title, content) {
       )
     ),
     fetch(name).then(
-      saved => save(name, entry = {
-        ...saved,
-        title,
-        content,
-      })
+      saved => {
+        entry = {
+          ...saved,
+          title,
+          content,
+        };
+        return save(name, entry);
+      }
     ),
   ]).then(() => entry);
 }
