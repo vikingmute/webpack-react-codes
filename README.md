@@ -3,6 +3,8 @@
 这个 repo 是随书附带的所有代码。
 请先装好 node 和 npm。
 
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/webpack-react-codes/Lobby)
+
 **因时间精力有限，书中难免存在错误或不严谨的部分，如发现欢迎提给我们，以 Pull Request 的形式将错误描述直接添加到本仓库中的[勘误表](./corrigendum.md)就更好了，谢谢！**
 
 * 第二章 Webpack 的示例代码
