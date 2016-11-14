@@ -44,6 +44,7 @@
     "expect": "^1.13.4",
     "html-webpack-plugin": "^1.7.0",
     "ignore-styles": "^2.0.0",
+    "jsdom": "^9.8.3",
     "mocha": "^2.3.4",
     "node-sass": "^3.4.2",
     "react-addons-test-utils": "^15.0.1",
