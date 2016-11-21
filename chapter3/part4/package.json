@@ -35,7 +35,7 @@
     "eslint-plugin-jsx-a11y": "^1.5.3",
     "eslint-plugin-react": "^5.2.1",
     "expect": "^1.13.4",
-    "html-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^2.21.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
   },

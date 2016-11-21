@@ -1,7 +1,8 @@
 # webpack-react-codes
 
-这个 repo 是随书附带的所有代码。
-请先装好 node 和 npm。
+这个 repo 是随书附带的所有代码，会根据读者发现的问题做一些维护，因此若在执行时遇到问题，可以先将代码本身更新为最新的版本，看问题是否得到解决。
+
+运行前请先装好 Node.js 和 npm。（本书写作时使用 Node.js v5.0.0，考虑到 Node.js 版本更迭较快，若发现问题，报告时麻烦附上 Node.js 及 npm 版本信息，可以帮助定位问题）
 
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/webpack-react-codes/Lobby)
 
