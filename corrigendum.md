@@ -54,4 +54,4 @@ var kitty = {
 
 kitty.grow();
 ```
-
+### [3.4.1 props属性] 代码段export default Class 中的Class应为 class关键字
