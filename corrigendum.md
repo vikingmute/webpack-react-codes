@@ -56,6 +56,7 @@ kitty.grow();
 ```
 ### [3.4.1 props属性] 代码段export default Class 中的Class应为 class关键字
 
+
 ### [4.2.3 配置测试环境]
 
 `来简单介绍一下这个命令， mocha也可以使用编译器编译 javascript 代码，这里使用 babel 这个编译器，因为现在代码的格式都是ES6的，而由于 Webpack 允许直接在代码中 import 样式文件，例如 import './style.scss' 这种格式的代码，如果直接用 mocha 来运行这类的代码，会直接报错，因为 babel 无法解析这类 CSS 代码，所以需要一个插件来忽略掉这类型的代码。这插件就是 ignore-styles 。简单来说运行 mocha 的时候可以接受这类型的参数：--compilers 指的是指定文件格式的预编译器，而 --require 指的是运行测试之前需要引入的一些辅助插件。`
@@ -63,3 +64,12 @@ kitty.grow();
 在该段后面应该添加：
 
 **特别注意，在windows环境下该命令应该为："test": "set NODE_ENV=production && mocha --compilers js:babel-core/register --require ignore-styles"**
+
+
+### [3.3.3 配置 webpack]
+
+`在项目根目录新建一个 *webpack.config.js* 的文件。` 应该修改为： **在项目根目录新建app文件夹，同时再新建一个 *webpack.config.js* 的文件。**
+
+代码中 `app: path.resolve(APP_PATH, 'index.jsx')` 应该修改为： **app: path.resolve(APP_PATH, 'app.jsx')**
+
+`复习一下上一章的知识，把 app 文件夹中的 index.jsx 作为入口，` 应该修改为： **复习一下上一章的知识，把 app 文件夹中的 app.jsx 作为入口，**
