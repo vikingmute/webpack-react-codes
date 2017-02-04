@@ -73,3 +73,7 @@ kitty.grow();
 代码中 `app: path.resolve(APP_PATH, 'index.jsx')` 应该修改为： **app: path.resolve(APP_PATH, 'app.jsx')**
 
 `复习一下上一章的知识，把 app 文件夹中的 index.jsx 作为入口，` 应该修改为： **复习一下上一章的知识，把 app 文件夹中的 app.jsx 作为入口，**
+
+### [6.2.3 使用 middleware]
+
+`2. redux-promise-middleware` 部分，第二段示例代码，首行注释中的文件位置 `chapter5/part2/app/reducers/entries/list.js`，应该修改为： **`chapter6/part2/app/reducers/entries/list.js`**
