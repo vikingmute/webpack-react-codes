@@ -54,6 +54,20 @@ var kitty = {
 
 kitty.grow();
 ```
+### [1.1.1 语言特性] 模板字符串
+
+代码示例中的变量名 `name` 错误书写成 `viking`，即，
+
+```
+var a = 'My name is ' + viking + '!';
+```
+
+应为
+
+```
+var a = 'My name is ' + name + '!';
+```
+
 ### [3.4.1 props属性] 代码段export default Class 中的Class应为 class关键字
 
 
