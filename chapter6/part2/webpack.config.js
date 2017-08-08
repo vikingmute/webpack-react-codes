@@ -25,9 +25,7 @@ module.exports= {
     proxy: {
       '/api/*': {
         target: 'http://localhost:3000/',
-        rewrite: function(req) {
-          req.url = req.url.replace(/^\/api/, '');
-        }
+        pathRewrite: {'^/api' : ''}
       }
     }
   },
