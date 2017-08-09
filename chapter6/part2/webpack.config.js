@@ -21,15 +21,7 @@ module.exports= {
     historyApiFallback: true,
     hot: true,
     inline: true,
-    progress: true,
-    proxy: {
-      '/api/*': {
-        target: 'http://localhost:3000/',
-        rewrite: function(req) {
-          req.url = req.url.replace(/^\/api/, '');
-        }
-      }
-    }
+    progress: true
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
