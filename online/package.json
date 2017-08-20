@@ -1,0 +1,62 @@
+{
+  "name": "deskmark",
+  "version": "1.0.0",
+  "description": "an web markdown writer an docs manager based on indexeddb and build on React.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --config webpack.prod.config.js",
+    "dev": "webpack-dev-server --hot --host 0.0.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "markdown",
+    "webpack",
+    "redux"
+  ],
+  "author": "vikingmute, nighca",
+  "license": "MIT",
+  "homepage": "https://github.com/vikingmute/deskmark#readme",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-eslint": "^6.0.2",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.5.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^4.3.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^2.21.0",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "uuid": "^2.0.1",
+    "webpack": "^3.5.2",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "classnames": "^2.2.5",
+    "isomorphic-fetch": "^2.2.1",
+    "leancloud-storage": "^3.1.0",
+    "marked": "^0.3.5",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^4.4.2",
+    "redux": "^3.2.1",
+    "redux-promise-middleware": "^3.0.0",
+    "redux-thunk": "^1.0.3"
+  }
+}
