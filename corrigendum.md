@@ -68,6 +68,16 @@ var a = 'My name is ' + viking + '!';
 var a = 'My name is ' + name + '!';
 ```
 
+### [1.1.1 语言特性] 类
+在类Dog中 注释 super.写成 super()., 即: 
+```
+//但是可以采用super(). +方法调用父类方法
+```
+应为
+```
+//但是可以采用super. +方法调用父类方法
+```
+
 ### [3.4.1 props属性] 代码段export default Class 中的Class应为 class关键字
 
 

@@ -30,4 +30,3 @@
 	* part2 使用 React ＋ Redux ＋ redux-promise-middleware 实现 Deskmark 的异步请求
 * 勘误（corrigendum）
 	* 全书勘误表 
-	* test
