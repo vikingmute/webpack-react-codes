@@ -78,6 +78,20 @@ var a = 'My name is ' + name + '!';
 //但是可以采用super. +方法调用父类方法
 ```
 
+
+### [1.3.2]
+在Gruntfile.js中 loadNpmTasks写成了loadnpmTasks, 即:
+```
+  //将两个任务插件导入
+  grunt.loadnpmTasks('grunt-contrib-uglify');
+  grunt.loadnpmTasks('grunt-contrib-jshint');
+```
+应为
+```
+  //将两个任务插件导入
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+```
 ### [3.4.1 props属性] 代码段export default Class 中的Class应为 class关键字
 
 
