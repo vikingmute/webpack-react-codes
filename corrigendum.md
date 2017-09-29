@@ -101,7 +101,24 @@ require('style!css!./index.css');
 ```
 require('style-loader!css-loader!./index.css');
 ```
+### [2.2.4配置文件]
+require CSS资源引入 require('style-loader!css-loader!./index.css'); 写成 require('style!css!./index.css'); 即
+```
+require('style!css!./index.css');
+```
+应为
+```
+require('style-loader!css-loader!./index.css');
+```
 
+webpack.config.js中loaders: ['style-loader', 'css-loader']写成 loaders: ['style', 'css']即
+```
+loaders: ['style', 'css']
+```
+应为
+```
+loaders: ['style-loader', 'css-loader']
+```
 ### [3.4.1 props属性] 代码段export default Class 中的Class应为 class关键字
 
 
