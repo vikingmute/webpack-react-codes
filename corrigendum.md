@@ -92,6 +92,16 @@ var a = 'My name is ' + name + '!';
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 ```
+### [2.2.3使用loader]
+在入口文件index.js中 It's no longer allowed to omit the '-loader' suffix when using loaders即
+```
+require('style!css!./index.css');
+```
+应为
+```
+require('style-loader!css-loader!./index.css');
+```
+
 ### [3.4.1 props属性] 代码段export default Class 中的Class应为 class关键字
 
 
